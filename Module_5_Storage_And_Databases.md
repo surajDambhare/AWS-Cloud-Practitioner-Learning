@@ -1,9 +1,5 @@
 # Module 5 — Storage and Database (AWS)
 
-**Audience:** Beginners new to AWS who want clear, step-by-step notes and real-world examples.
-
-**Format:** Simple language, examples, quick-start CLI snippets, comparisons, and best-practices. Save this file as `MODULE-5-STORAGE-AND-DATABASE.md` in your GitHub repo.
-
 ---
 
 ## Table of Contents
