@@ -44,13 +44,13 @@
 
 # 1. Topic A — AWS Storage
 
-## 1.1 Overview (Simple)
+## 1.1 Overview
 
 Storage in AWS is about where and how you keep data. Different applications need different types of storage depending on latency, throughput, access patterns, and cost. AWS offers specialized services for each pattern so you can pick the right tool instead of forcing one tool to do everything.
 
 Key idea: **Choose storage by *how* you access data** (frequently vs rarely, small files vs large files, block device vs file share, streaming vs archive).
 
-## 1.2 Storage types (plain language)
+## 1.2 Storage types
 
 * **Object storage** — stores whole files (called objects) with metadata. Great for backups, logs, images, videos. (Amazon S3)
 * **Block storage** — raw disks attached to servers (like a laptop SSD). Great for databases and OS disks. (Amazon EBS)
@@ -160,13 +160,13 @@ aws efs create-file-system --creation-token my-efs-token
 
 # 2. Topic B — AWS Databases
 
-## 2.1 Overview (Simple)
+## 2.1 Overview
 
 Databases store structured data for your applications. AWS offers managed database services so you can focus on schema and queries while AWS handles hardware, replication, backups, and scaling.
 
 Key idea: **Pick the database that matches your access patterns and data model**: relational for transactions and complex queries, NoSQL for scale and simple access patterns, data warehouses for analytics, in-memory for low-latency data.
 
-## 2.2 Database categories (plain)
+## 2.2 Database categories
 
 * **Relational (SQL):** Structured tables with ACID transactions (e.g., MySQL, PostgreSQL). Use RDS/Aurora.
 * **NoSQL Key-Value / Document:** Flexible schemas, massive scale and single-digit millisecond reads — DynamoDB, DocumentDB.
@@ -174,7 +174,7 @@ Key idea: **Pick the database that matches your access patterns and data model**
 * **In-memory DB / Cache:** Ultra-fast data access (ElastiCache, MemoryDB).
 * **Graph DB, Ledger, Time-series:** Specialized databases for relationships (Neptune), immutable audit trails (QLDB), time-series (Timestream).
 
-## 2.3 Core AWS database services — practical notes
+## 2.3 Core AWS database services 
 
 ### Amazon RDS (Relational Database Service)
 
@@ -344,11 +344,3 @@ aws neptune create-db-cluster --db-cluster-identifier my-neptune-cluster --engin
 2. **Big data pipeline:** Ingest events → store raw data in S3 (data lake) → ETL with AWS Glue → load aggregated data into Redshift for BI.
 3. **IoT telemetry:** Edge devices → ingest into Kinesis or IoT Core → store time-series in Timestream → visualize.
 
----
-
-If you want, I can:
-
-* Convert this to a ready-to-commit `MODULE-5-NOTES.md` file with a clean header and Git commit message template.
-* Create shorter flashcards or an Anki deck for revision.
-
-*End of Module 5 — Storage & Database*
