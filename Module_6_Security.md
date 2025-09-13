@@ -14,14 +14,13 @@ This module explains all aspects of AWS Security in **simple terms**, with **han
     * [What it is](#what-it-is)
     * [Responsibilities breakdown (detailed)](#responsibilities-breakdown-detailed)
     * [Examples and real-world use cases](#examples-and-real-world-use-cases)
-    * \[Checklist & best practices]
 * [👤 Topic B: AWS Identity and Access Management (IAM)](#-topic-b-aws-identity-and-access-management-iam)
 
     * [Key concepts](#key-concepts)
     * [Types of policies and where to use them](#types-of-policies-and-where-to-use-them)
     * [Sample policies and trust policy examples](#sample-policies-and-trust-policy-examples)
     * [Step-by-step: common IAM tasks (CLI + Console)](#step-by-step-common-iam-tasks-cli--console)
-    * \[Best practices & common pitfalls]
+  
 * [🏢 Topic C: AWS Organizations](#-topic-c-aws-organizations)
 
     * [Core concepts](#core-concepts)
